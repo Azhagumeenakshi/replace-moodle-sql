@@ -1,0 +1,220 @@
+[
+    {
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$comment": "JSON Schema for mdl_analytics_indicator_calc table",
+        "$id": "mdl_analytics_indicator_calc",
+        "title": "mdl_analytics_indicator_calc",
+        "description": "Stored indicator calculations",
+        "type": "object",
+        "required": [
+            "id",
+            "starttime",
+            "endtime",
+            "contextid",
+            "sampleorigin",
+            "sampleid",
+            "indicator",
+            "timecreated"
+        ],
+        "definitions": {
+            "id": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "starttime": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "endtime": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "contextid": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "sampleorigin": {
+                "type": "string",
+                "maxLength": 255
+            },
+            "sampleid": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "indicator": {
+                "type": "string",
+                "maxLength": 255
+            },
+            "value": {
+                "type": "number",
+                "maximum": 99999999.99,
+                "minimum": -99999999.99,
+                "default": null
+            },
+            "timecreated": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            }
+        },
+        "properties": {
+            "id": {
+                "$ref": "#/definitions/id"
+            },
+            "starttime": {
+                "$ref": "#/definitions/starttime"
+            },
+            "endtime": {
+                "$ref": "#/definitions/endtime"
+            },
+            "contextid": {
+                "$ref": "#/definitions/contextid"
+            },
+            "sampleorigin": {
+                "$ref": "#/definitions/sampleorigin"
+            },
+            "sampleid": {
+                "$ref": "#/definitions/sampleid"
+            },
+            "indicator": {
+                "$ref": "#/definitions/indicator"
+            },
+            "value": {
+                "$ref": "#/definitions/value"
+            },
+            "timecreated": {
+                "$ref": "#/definitions/timecreated"
+            }
+        }
+    },
+    {
+        "$schema": "http://json-schema.org/draft-07/schema",
+        "$comment": "JSON Schema for mdl_analytics_models table",
+        "$id": "mdl_analytics_models",
+        "title": "mdl_analytics_models",
+        "description": "Analytic models.",
+        "type": "object",
+        "required": [
+            "id",
+            "enabled",
+            "trained",
+            "target",
+            "indicators",
+            "version",
+            "timemodified",
+            "usermodified"
+        ],
+        "definitions": {
+            "id": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "enabled": {
+                "type": "integer",
+                "minimum": -128,
+                "maximum": 127
+            },
+            "trained": {
+                "type": "integer",
+                "minimum": -128,
+                "maximum": 127
+            },
+            "name": {
+                "type": "string",
+                "maxLength": 1333,
+                "default": null
+            },
+            "target": {
+                "type": "string",
+                "maxLength": 255
+            },
+            "indicators": {
+                "type": "string",
+                "maxLength": 4294967295
+            },
+            "timesplitting": {
+                "type": "string",
+                "maxLength": 255,
+                "default": null
+            },
+            "predictionsprocessor": {
+                "type": "string",
+                "maxLength": 255,
+                "default": null
+            },
+            "version": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "contextids": {
+                "type": "string",
+                "maxLength": 255,
+                "default": null
+            },
+            "timecreated": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23,
+                "default": null
+            },
+            "timemodified": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            },
+            "usermodified": {
+                "type": "integer",
+                "minimum": -6.044629098073146e+23,
+                "maximum": 6.044629098073146e+23
+            }
+        },
+        "properties": {
+            "id": {
+                "$ref": "#/definitions/id"
+            },
+            "enabled": {
+                "$ref": "#/definitions/enabled"
+            },
+            "trained": {
+                "$ref": "#/definitions/trained"
+            },
+            "name": {
+                "$ref": "#/definitions/name"
+            },
+            "target": {
+                "$ref": "#/definitions/target"
+            },
+            "indicators": {
+                "$ref": "#/definitions/indicators"
+            },
+            "timesplitting": {
+                "$ref": "#/definitions/timesplitting"
+            },
+            "predictionsprocessor": {
+                "$ref": "#/definitions/predictionsprocessor"
+            },
+            "version": {
+                "$ref": "#/definitions/version"
+            },
+            "contextids": {
+                "$ref": "#/definitions/contextids"
+            },
+            "timecreated": {
+                "$ref": "#/definitions/timecreated"
+            },
+            "timemodified": {
+                "$ref": "#/definitions/timemodified"
+            },
+            "usermodified": {
+                "$ref": "#/definitions/usermodified"
+            }
+        }
+    }
+]
