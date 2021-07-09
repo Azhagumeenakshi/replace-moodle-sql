@@ -1,6 +1,0 @@
-when i run testddl.js
-
-the output is
-
-
-{ files: './moodle.sql', from: '(^--.*)', to: '' }
